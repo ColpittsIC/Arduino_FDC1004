@@ -284,8 +284,4 @@ void    FDC1004Class::end()
     _wire->end();
 }
 
-#ifdef ARDUINO_ARDUINO_NANO33BLE
 FDC1004Class FDC1004(Wire1);
-#else
-FDC1004Class FDC1004(Wire);
-#endif
