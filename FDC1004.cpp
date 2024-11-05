@@ -1,5 +1,5 @@
 /*
-  This file is part of the Arduino_HS300x library.
+  This file is part of the Arduino_FDC1004 library.
   Copyright (c) 2022 Arduino SA. All rights reserved.
 
   This library is free software; you can redistribute it and/or
