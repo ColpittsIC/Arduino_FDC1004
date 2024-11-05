@@ -1,0 +1,29 @@
+#########################################
+# Syntax Coloring Map For Arduino_HS300X
+#########################################
+# Class
+#########################################
+
+Arduino_FDC1004	KEYWORD1
+FDC1004	KEYWORD1
+FDC1004	KEYWORD1
+
+#########################################
+# Methods and Functions 
+#########################################	
+
+begin	KEYWORD2
+end	KEYWORD2
+
+measurementConfiguration	KEYWORD2
+channelConfiguration		KEYWORD2
+channelOffset			KEYWORD2
+channelGainConfiguration	KEYWORD2
+measureAvailable		KEYWORD2
+getChannelMeasurement		KEYWORD2
+
+#########################################
+# Constants
+#########################################
+
+
