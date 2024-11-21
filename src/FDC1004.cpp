@@ -284,4 +284,20 @@ void    FDC1004Class::end()
     _wire->end();
 }
 
+
+void    FDC1004Class::resetRequest()
+{
+    uint16_t temp_conf_reg;
+    uint8_t lsb,msb;
+
+    temp_conf_reg = CHIP_RESET;
+    msb = ((temp_conf_reg >> 8) & 0xFF);
+    lsb = (temp_conf_reg & 0xFF); 
+    _wire->beginTransmission(FDC1004_ADDRESS);
+    _wire->write(FDC1004_FDC_CONF);
+    _wire->write(msb);
+    _wire->write(lsb);
+    _wire->endTransmission(false);
+}
+
 FDC1004Class FDC1004(Wire1);

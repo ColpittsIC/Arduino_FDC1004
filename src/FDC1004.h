@@ -56,6 +56,8 @@ enum {
 #define     MEAS_3_EN       (0x1 << 5)
 #define     MEAS_4_EN       (0x1 << 4)
 
+#define     CHIP_RESET      (0x1 <<15)
+
 
 
 
@@ -72,6 +74,7 @@ class FDC1004Class{
         uint16_t    channelGainConfiguration(int channel = CHANNEL1,uint16_t gain = 0x0);
         bool        measureAvailable(int channel = CHANNEL1);
         int         getChannelMeasurement(int channel = CHANNEL1);
+        void        resetRequest();
 
 
 
